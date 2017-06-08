@@ -118,8 +118,8 @@ void Pivot()
 			p2 = j;
 		}
 	}
-	printf("p2 is %d\n",p2);
-	printf("XMAX is %lf\n",XMAX);
+	//printf("p2 is %d\n",p2);
+	//printf("XMAX is %lf\n",XMAX);
 
 	rap = 999999.0;
 	for(i=2; i<=NC+1; i++){
@@ -135,17 +135,17 @@ void Pivot()
 	
 	e10: ; //labels
 	}
-	printf(" p1 is %d\n", p1);
+	//printf(" p1 is %d\n", p1);
 	v = table[0][p2];
 	table[0][p2] = table[p1][0];
 	table[p1][0] = v;
 
-	for(i=0; i<=NC+1; i++){
+	/*for(i=0; i<=NC+1; i++){                      //print the table
 		for(j=0; j<=NV+1; j++){
 			printf("%lf ", table[i][j]);
 		}
 		printf("\n");
-	}
+	}*/
 }
 
 void Formula()
